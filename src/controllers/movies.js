@@ -12,7 +12,14 @@ class MoviesController{
     }
 
     crear(req,res){
-        res.send(usuarios[0]);
+        Movie.create().then(createdMovie => {
+            console.log('Movie created:', createdMovie);
+            res.send(createdMovie);
+
+        })
+        .catch(error => {
+            console.error('Error creating movie:', error);
+        });
     }
 
     editar(req,res){

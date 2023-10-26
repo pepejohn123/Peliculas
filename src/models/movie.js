@@ -6,7 +6,7 @@ const schema = new Schema({
     genre: {type:String, require:true},
     duration: {type:Number,require:true},
     director:{type: String, require:true},  
-    actors:{type: String, require:false}  
+    actors:{type: Array, require:false}  
     
 });
 
