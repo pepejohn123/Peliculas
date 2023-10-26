@@ -1,5 +1,5 @@
-const authMiddleware = (req,res,next)=>{
-    console.log(req.query); /* parámetros de query (los que llevan ? en la url) */
+/* const authMiddleware = (req,res,next)=>{
+    console.log(req.query); // parámetros de query (los que llevan ? en la url) 
 
     const token = req.query.token;
 
@@ -12,4 +12,4 @@ const authMiddleware = (req,res,next)=>{
     
 };
 
-module.exports = authMiddleware;
+module.exports = authMiddleware; */
