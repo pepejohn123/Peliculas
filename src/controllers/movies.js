@@ -12,7 +12,9 @@ class MoviesController{
     }
 
     crear(req,res){
-        Movie.create().then(createdMovie => {
+        const movieData = req.body;
+        console.log(movieData);
+        Movie.create(movieData).then(createdMovie => {
             console.log('Movie created:', createdMovie);
             res.send(createdMovie);
 

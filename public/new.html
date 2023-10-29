@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Movie</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 <body>
     <h1>Add New Movie</h1>
 
-    <form action="/add_movie" method="post">
+    <form method="post" id="movie">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -32,6 +31,9 @@
         <input type="submit" value="Add Movie">
     </form>
 
-    <a href="index.html"><button>Back to Index</button></a>
+    <a href="/assets/index.html"><button>Back to Index</button></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/scripts/main.js"></script>
 </body>
 </html>
